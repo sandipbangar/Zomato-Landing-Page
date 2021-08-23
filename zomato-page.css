@@ -1,0 +1,523 @@
+/* provided the margin n all to whole page 0  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ; /* Box Model */
+}
+
+/* selected the font bck clr and transition to whole body  */
+body{
+    font-family: 'Merriweather', serif;
+    background-color: #ebf2ff; /* HEX Value of Color */
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+/* button styling */
+button{
+    background-color: transparent;
+    border: none;
+}
+
+section{
+    margin: 20px 0;
+
+}
+
+/* providing properties */
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* created a primary button to use for every button  */
+.primary__button{
+    padding: 10px;
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: white;
+    border-radius: 4px;
+    transition: 1s;
+    background-size: 200% auto;
+    cursor: pointer;
+}
+
+/* nav bar stylin clr margin and all  */
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    /* margin: 10px; */
+    padding: 0 20px;
+    z-index: 9999;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* styling for logo  */
+.brand__logo{
+    width: 100%;
+    height: 100%;
+}
+
+/* width to brand zomato */
+.navbar__brand{
+    width: 100px;
+}
+
+/* styling like padding clr image like show etc to button  */
+.primary__button{
+    padding: 10px;
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: white;
+    border-radius: 4px;
+    transition: 1s;
+    background-size: 200% auto;
+    cursor: pointer;
+}
+
+/* hovering to button clr change */
+.primary__button:hover{
+    background-position: right center;
+    color: white;
+}
+
+/* mentioning position and width of hero image container at center  */
+.hero__image__container{
+    position: relative;
+    width: 100%;
+}
+
+/* positioning etc to plate img  */
+.hero__image{
+    position: absolute;
+    width: 100%;
+    right: auto;
+    left: auto;
+    z-index: 3;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* provide shape behind plate img  */
+.hero__image__shape{
+    position: absolute;
+    right: 2;
+    z-index: 2;
+
+}
+
+/* hero description class text in flex and column  */
+.hero__description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+/* provided property to text  */
+.text__heading{
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    color: #1d3557;
+    font-weight: bold;
+}
+
+/* provided the properties to video in iframe  */
+.video__footage__container{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.video__footage{
+    position: relative;
+}
+
+/* to make backgrnd image behind video properties */
+/* z-index is -1 cauz the image shld behind video  */
+
+.video__footage::before{
+    content: "";
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0.5rem, 0.5rem);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* height and width provided to iframe content cauz while in mobile it was not looking good  */
+.chef__video{
+    width: 100%;
+    height: 100%;
+}
+ /* styling for the video footage text  */
+.video__footage__text{
+    margin-top: 2rem;
+    color: #1d3557;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+}
+.food__list__container{
+    margin: 2rem 0;
+    width: 100%;
+    position: relative;
+}
+.food__menu__card{
+    background-color: white;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.food__menu__card__image{
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+
+.food__menu__card__title{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1d3557;
+    margin: 0.5rem 0;
+}
+
+.food__menu__card__restaurants{
+    color: #1d3557;
+}
+
+.food__menu__card__description{
+    padding: 1rem;
+}
+
+.food__list__heading{
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    color: #1d3557;
+    font-weight: bold;
+}
+
+.food__menu__class__list{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.restaurant__list__container{
+    margin-top: 3rem;
+}
+
+.restaurant__list__row__1{
+    display: flex;
+    align-items: baseline;
+}
+
+.restaurant__list__row__2{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.restaurant1 , .restaurant4{
+    border-radius: 4px;
+    margin: 0 4px;
+    width: 150px;
+    height: 80px;
+}
+
+.restaurant2 , .restaurant3{
+    border-radius: 4px;
+    margin: 0 4px;
+    width: 200px;
+    height: 100px;
+}
+
+.end__section{
+    margin: 2rem 0;
+    width: 100%;
+    text-align: center;
+    line-height: 2.25rem;
+}
+
+.search__box{
+    /* margin: 2rem 0; */
+    width: 100%;
+    /* position: relative; */
+    /* display: flex; */
+    align-content: center;
+    justify-content: space-around;
+    /* font-weight: bold; */
+    
+}
+.box{
+    font-size: 1rem;
+    /* margin-left: 0.5rem; */
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+.secondary__button{
+    margin: 10px;
+    padding: 10px;
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: white;
+    border-radius: 4px;
+    transition: 1s;
+    background-size: 200% auto;
+    cursor: pointer;
+}
+}
+
+.lol{
+    
+    display: flex;
+    margin: 2rem 0;
+    align-items: center;
+    
+}
+
+.restaurant__text__image{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.restaurant__image{
+    position: relative;
+    justify-content: center;
+    border-radius: 6px;
+    margin-top: 10px 10px;
+    width: 100%;
+    height: 300px;
+}
+
+/* .navbar__nav__items2{
+    height: 100px;
+    width: 100%;
+} */
+
+.brand__logo2{
+    width: 200px;
+    height: 100%;
+    justify-content: space-around;
+}
+.navbar2{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 20px;
+    z-index: 9999;
+}
+
+.brand__logo2{
+    margin: 0 3rem;
+    /* backgr: white; */
+    color: white;
+}
+
+.navbar__brand2{
+    margin: 0 15rem;
+}
+.nav__item2{
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 15rem;
+}
+
+.text__footer{
+    color: white;
+    margin: 3px 3px;
+    line-height: 1rem;
+}
+
+.text__on__image{
+    position: absolute;
+    color: white;
+}
+
+@media (min-width: 768px){
+    .hero__container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .hero__image{
+        margin-top: 2rem;
+    }
+    .text__heading{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    ..food__list__container{
+        margin: 5rem 0;
+    }
+
+    .food__menu__class__list{
+        flex-direction: row;
+    }
+    .food__menu__class__list > div:nth-child(2){
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+    }
+    .food__list__container__diagonal{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transform: skewY(-5deg);
+        background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+        );
+        z-index: -3;
+    }
+
+    .restaurant__list__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .restaurant__list__text{
+        width: 100%;
+    }
+
+    .search__box{
+        margin: 0 2rem;
+    }
+
+    .secondary__button
+    {
+        font-size: 20px;
+        padding: 15px 20px;
+        font-weight: bold;
+    }
+
+    .restaurant__text__image{
+        box-sizing: border-box;
+    }
+
+    .restaurant__image{
+        box-sizing: border-box;
+    }
+
+    .text__on__image{
+        box-sizing: border-box;
+        margin: 0 2rem;
+        /* padding: 5; */
+    }
+}
+
+@media (min-width: 1024px)
+{
+    
+    .container
+    {
+        max-width: 900px;
+    }
+
+    .navbar
+    {
+        padding: 0 50px;
+    }
+    .navbar__brand
+    {
+        width: 150px;
+    }
+    .primary__button
+    {
+        font-size: 20px;
+        padding: 15px 20px;
+        font-weight: bold;
+    }
+    .text__heading{
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+    .video__footage__text
+    {
+        width: 70%;
+    }
+
+    .restaurant1 , .restaurant4{
+        width: 200px;
+        height: 150px;
+    }
+
+    .restaurant2 , .restaurant3{
+        width: 280px;
+        height: 200px;
+    }
+
+    .restaurant__list__image__container{
+        width: 100%;
+    }
+
+    .text__heading{
+        font-size: 2rem;
+        
+    }
+}
+
+
+@media (min-width: 1280px){
+
+    .container{
+        max-width: 1100px;
+    }
+}
+
+
+@media (min-width: 1536px){
+    .container{
+        max-width: 1250px;
+    }
+}
